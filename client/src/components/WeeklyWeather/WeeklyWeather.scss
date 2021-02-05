@@ -1,0 +1,22 @@
+.weekly-card-container{
+    flex: 2;
+    margin: 10px;
+    .weekly-card-items{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+        .hourly-weather-card{
+            width: 75px;
+            height: 110px;
+            font-size: 12px;
+            text-align: center;
+            line-height: 0px;
+            margin: 10px;
+            img{
+                width: 75px;
+                height: 75px;
+            }
+        }
+    }
+}
+    

@@ -1,0 +1,23 @@
+.card-container{
+    margin: 10px;
+    flex: 1;
+    .sub-card-container{
+        .description{
+            margin-top: 0;
+        }
+        .divider{
+            margin-bottom: 10px;
+        }
+        .weather-day-info{
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .icon{
+            width: 100px;
+            height: 100px;
+        }
+    }
+    
+}

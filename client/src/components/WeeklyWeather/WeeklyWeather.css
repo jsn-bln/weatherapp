@@ -1,0 +1,30 @@
+.weekly-card-container {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin: 10px;
+}
+
+.weekly-card-container .weekly-card-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10px;
+}
+
+.weekly-card-container .weekly-card-items .hourly-weather-card {
+  width: 75px;
+  height: 110px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 0px;
+  margin: 10px;
+}
+
+.weekly-card-container .weekly-card-items .hourly-weather-card img {
+  width: 75px;
+  height: 75px;
+}
+/*# sourceMappingURL=WeeklyWeather.css.map */
