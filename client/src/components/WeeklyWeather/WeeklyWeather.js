@@ -23,7 +23,6 @@ const WeeklyWeather = (props) => {
     const hourly_data_weather = raw_hourly_data.forEach(data => hourly_weather.push(data.weather[0]))
     const daily_data_weather = weatherData.daily.forEach(data => daily_weather.push(data.weather[0]))
     const [menuname, setMenuname] = useState('Hourly Weather')
-    console.log(daily_weather)
     const days = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday","Friday","Saturday","Sunday"]
     const getTime = () => {
         const orderedTime = []

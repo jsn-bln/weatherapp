@@ -1,4 +1,12 @@
-.main-container {
+.App {
+  background: #a8dadc;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.App .main-container {
   height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,7 +24,7 @@
   color: #e63946;
 }
 
-.main-container .action-group {
+.App .main-container .action-group {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,7 +34,7 @@
           justify-content: center;
 }
 
-.main-container .action-group .search-bar {
+.App .main-container .action-group .search-bar {
   width: 20%;
   height: 40px;
   background: #f1faee;
@@ -35,7 +43,7 @@
   padding-left: 30px;
 }
 
-.main-container .action-group .search-btn {
+.App .main-container .action-group .search-btn {
   height: 42px;
   border: none;
   background: #e63946;
@@ -43,12 +51,12 @@
   cursor: pointer;
 }
 
-.data-container {
+.App .data-container {
   margin: 0 auto;
   width: 80%;
 }
 
-.data-container .cards {
+.App .data-container .cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,14 +64,6 @@
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-
-.App {
-  background: #a8dadc;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  height: 100vh;
 }
 
 @media (max-width: 700px) {

@@ -1,47 +1,47 @@
-.main-container{
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #e63946;
-    .action-group{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        .search-bar{
-            width: 20%;
-            height: 40px;
-            background: #f1faee;
-            text-decoration: none;
-            border: none;
-            padding-left: 30px;
-        }
-        .search-btn{
-            height: 42px;
-            border: none;
-            background: #e63946;
-            color: #f1faee;
-            cursor: pointer;
-        }
-    }
-    
-}
-.data-container{
-    margin: 0 auto;
-    width: 80%;
-    .cards{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-}
 .App{
     background: #a8dadc;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 100vh;
+    .main-container{
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #e63946;
+        .action-group{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .search-bar{
+                width: 20%;
+                height: 40px;
+                background: #f1faee;
+                text-decoration: none;
+                border: none;
+                padding-left: 30px;
+            }
+            .search-btn{
+                height: 42px;
+                border: none;
+                background: #e63946;
+                color: #f1faee;
+                cursor: pointer;
+            }
+        }
+        
+    }
+    .data-container{
+        margin: 0 auto;
+        width: 80%;
+        .cards{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
 }
 
 
