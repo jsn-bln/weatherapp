@@ -1,5 +1,5 @@
 .main-container {
-  height: 35vh;
+  height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,8 +61,33 @@
 .App {
   background: #a8dadc;
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  width: 100%;
   height: 100vh;
+}
+
+@media (max-width: 700px) {
+  .App {
+    height: 105vh;
+    background-position: 50% 30%;
+  }
+  .App .main-container .action-group .search-bar {
+    width: 50%;
+  }
+  .App .data-container {
+    margin: 0 auto;
+    width: 95%;
+  }
+  .App .data-container .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 /*# sourceMappingURL=App.css.map */

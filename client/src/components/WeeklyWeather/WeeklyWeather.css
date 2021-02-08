@@ -11,20 +11,61 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 10px;
+  margin-top: 5%;
 }
 
 .weekly-card-container .weekly-card-items .hourly-weather-card {
-  width: 75px;
-  height: 110px;
+  width: 100%;
+  height: 150px;
   font-size: 12px;
   text-align: center;
-  line-height: 0px;
-  margin: 10px;
+  margin: 2px;
+  padding: 10px;
 }
 
 .weekly-card-container .weekly-card-items .hourly-weather-card img {
   width: 75px;
   height: 75px;
+}
+
+.weekly-card-container .daily-card-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+.weekly-card-container .daily-card-items .daily-weather-card {
+  width: 100%;
+  height: 150px;
+  font-size: 12px;
+  text-align: center;
+  margin: 2px;
+  padding: 10px;
+}
+
+.weekly-card-container .daily-card-items .daily-weather-card img {
+  width: 75px;
+  height: 75px;
+}
+
+.weekly-card-container .arrowBtns {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (max-width: 700px) {
+  .weekly-card-container .weekly-card-items, .weekly-card-container .daily-card-items {
+    padding-bottom: 20px;
+  }
+  .weekly-card-container .line-graph {
+    height: 20vh;
+  }
 }
 /*# sourceMappingURL=WeeklyWeather.css.map */

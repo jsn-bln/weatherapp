@@ -13,11 +13,12 @@ import CurrentWeather from './components/CurrentWeather/CurrentWeather'
 import WeeklyWeather from './components/WeeklyWeather/WeeklyWeather'
 import DataContext from './context/DataContext'
 import CircularProgress from '@material-ui/core/CircularProgress';
+import defaultBackground from './imgs/main-bg.jpg'
 
 const App = () => {
   const [city, setCity] = useState('')
   const [data, setData] = useState({})
-  const [bg, setBg] = useState('')
+  const [bg, setBg] = useState(defaultBackground)
   const [weatherData, setWeatherData] = useState({})
   const [isLoading, setIsLoading] = useState(true)
   const [time, setTime] = useState('')
@@ -104,7 +105,8 @@ const App = () => {
             </div>
         </div>
         :
-        <div>No data yet</div>
+        <>
+        </>
       }
     </div>
   );

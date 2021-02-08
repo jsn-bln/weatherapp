@@ -4,19 +4,49 @@
     .weekly-card-items{
         display: flex;
         flex-wrap: wrap;
-        margin: 10px;
+        margin-top: 5%;
         .hourly-weather-card{
-            width: 75px;
-            height: 110px;
+            width: 100%;
+            height: 150px;
             font-size: 12px;
             text-align: center;
-            line-height: 0px;
-            margin: 10px;
+            margin: 2px;
+            padding: 10px;
             img{
                 width: 75px;
                 height: 75px;
             }
         }
     }
+    .daily-card-items{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5%;
+        .daily-weather-card{
+            width: 100%;
+            height: 150px;
+            font-size: 12px;
+            text-align: center;
+            margin: 2px;
+            padding: 10px;
+            img{
+                width: 75px;
+                height: 75px;
+            }
+        }
+    }
+    .arrowBtns{
+        height: fit-content;
+        align-self: center;
+    }
 }
-    
+@media(max-width: 700px){
+    .weekly-card-container{
+        .weekly-card-items, .daily-card-items{
+            padding-bottom: 20px;
+        }
+        .line-graph{
+            height: 20vh;
+        }
+    }
+}
