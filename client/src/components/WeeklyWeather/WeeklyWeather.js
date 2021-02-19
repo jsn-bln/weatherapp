@@ -23,7 +23,7 @@ const WeeklyWeather = (props) => {
     const hourly_data_weather = raw_hourly_data.forEach(data => hourly_weather.push(data.weather[0]))
     const daily_data_weather = weatherData.daily.forEach(data => daily_weather.push(data.weather[0]))
     const [menuname, setMenuname] = useState('Hourly Weather')
-    const days = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday","Friday","Saturday","Sunday"]
+    const days = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday","Friday","Saturday","Sunday","Monday", "Tuesday", "Wednesday", "Thursday","Friday","Saturday"]
     const getTime = () => {
         const orderedTime = []
         const dict = {  1:'1 am', 2:'2 am', 3:'3 am',4:'4 am',5:'5 am',6:'6 am',7:'7 am',8:'8 am',9:'9 am',10:'10 am',
@@ -120,7 +120,7 @@ const WeeklyWeather = (props) => {
     }
 
     const time = getTime() // FOR THE HOURLY AND DAILY WEATHER CARDS
-    let index = 0 // index of time, very bad code
+    let index = 0 // index of time
     let currentDay = new Date().getDay()
     return(
         <Card className="weekly-card-container">
@@ -192,7 +192,6 @@ const WeeklyWeather = (props) => {
                                 <div><strong>{hour.main}</strong></div>
                                 <div>{hour.description}</div>
                                 <div>{hour.temp}</div>
-                                
                             </Card>
                             
                         

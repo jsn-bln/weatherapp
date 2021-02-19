@@ -93,7 +93,7 @@ const App = () => {
             <div className="cards">
               <DataContext.Provider value={{weatherData, setWeatherData}}>
               {isLoading?
-                <CircularProgress />
+                <CircularProgress className='loader'/>
                 :
                 <>
                 <CurrentWeather  data={data}/>
